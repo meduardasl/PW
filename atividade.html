@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    //criar lista
+    var nome = []
+
+    nome.push("Maria")
+    nome.push("Rafa")
+    nome.push("Lulinha")
+    nome.push("Azul")
+    nome.push("Pedra")
+    nome.push("petra")   
+    nome.push("Preta")
+    nome.push("Yellow")
+    nome.push("Ubiga")
+    nome.push("Rosa")
+
+    //remover 3 elementos
+    nome.pop()
+    nome.splice(nome.indexOf("Maria"), 1)
+    nome.splice(nome.indexOf("Rafa"), 1)
+
+    //substituir, adicionar elemento
+    nome.splice(2, 0, "jirombas")
+    nome.splice(nome.indexOf("Azul"), 1, "abel");
+
+    //ordenar
+    nome.sort()
+
+    //imprimir
+    nome.map(function(item) {
+    console.log(item);
+});
+
+    //pesquisar elemento (filter)
+    var resultado = nome.filter(item => item === "Pedra")
+    console.log(resultado)
+
+    //pesquisar elemento (find)
+    var encontrado = nome.find(item => item === "Ubiga")
+    console.log(encontrado)
+
+    //mostrar a quantidade de elementos (lenght)
+    console.log("Quantidade de elementos: " + nome.length)
+
+    //criar novo objeto "aluno" e adicionar 10 alunos
+    var aluno = []
+    
+    aluno.push({ nome: "Chamego", idade: 16, turma: "2 INFOR"})
+    aluno.push({ nome: "Chamego", idade: 16, turma: "2 INFOR"})
+    aluno.push({ nome: "Chamego", idade: 16, turma: "2 INFOR"})
+    aluno.push({ nome: "Chamego", idade: 16, turma: "2 INFOR"})
+    aluno.push({ nome: "Chamego", idade: 16, turma: "2 INFOR"})
+    aluno.push({ nome: "Chamego", idade: 16, turma: "2 INFOR"})
+    aluno.push({ nome: "Chamego", idade: 16, turma: "2 INFOR"})
+    aluno.push({ nome: "Chamego", idade: 16, turma: "2 INFOR"})
+    aluno.push({ nome: "Chamego", idade: 16, turma: "2 INFOR"})
+    aluno.push({ nome: "Chamego", idade: 16, turma: "2 INFOR"})
+
+    console.log(aluno)
+
+
+</script>
+
+</html>
